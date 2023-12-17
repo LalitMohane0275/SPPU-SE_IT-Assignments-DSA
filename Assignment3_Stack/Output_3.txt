@@ -1,0 +1,57 @@
+Enter the expression : a*b+c/d
+Enter your choice : 
+1 - Infix to postfix
+2 - Infix to prefix
+3 - postfix evaluation
+4 - prefix evaluation
+Press 5 to exit.
+1
+Postfix Expression : ab*cd/+
+Do you want to continue(y/n) : y
+Enter the expression : a*b+c-d
+Enter your choice : 
+1 - Infix to postfix
+2 - Infix to prefix
+3 - postfix evaluation
+4 - prefix evaluation
+Press 5 to exit.
+2
+Prefix Expression : -+*abcd
+Do you want to continue(y/n) : y
+Enter the expression : a*b/c-d
+Enter your choice : 
+1 - Infix to postfix
+2 - Infix to prefix
+3 - postfix evaluation
+4 - prefix evaluation
+Press 5 to exit.
+3
+Postfix Expression : ab*c/d-
+Enter value of operand a : 
+2
+Enter value of operand b : 
+8
+Enter value of operand c : 
+4
+Enter value of operand d : 
+1
+Result : 3
+Do you want to continue(y/n) : y
+Enter the expression : a+b*c
+Enter your choice : 
+1 - Infix to postfix
+2 - Infix to prefix
+3 - postfix evaluation
+4 - prefix evaluation
+Press 5 to exit.
+4
+Prefix Expression : +a*bc
+Enter value of operand c : 
+3
+Enter value of operand b : 
+4
+Enter value of operand a : 
+5
+Result : 17
+Do you want to continue(y/n) : n
+
