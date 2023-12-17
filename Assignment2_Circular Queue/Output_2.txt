@@ -1,0 +1,166 @@
+Circular Queue
+
+Output :-
+
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+1
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+2
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+3
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+4
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+5
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+6
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+7
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+8
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+9
+The element is enqueued successfully
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+1
+Enter the element you want to enqueue : 
+
+10
+Cannot insert element as the queue is full
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+3
+At front        0       8       1
+At rear         0       8       9
+All from front  0       8       1 2 3 4 5 6 7 8 9 
+All from rear   0       8       9 8 7 6 5 4 3 2 1 
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+2
+dequeue operation successful, element 1 dequeued.
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+2
+dequeue operation successful, element 2 dequeued.
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+2
+dequeue operation successful, element 3 dequeued.
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+2
+dequeue operation successful, element 4 dequeued.
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+3
+At front        4       8       5
+At rear         4       8       9
+All from front  4       8       5 6 7 8 9 
+All from rear   4       8       9 8 7 6 5 
+_______MENU_______
+1 - enqueue
+2 - dequeue
+3 - display
+4 - exit
+Enter your choice : 
+4
