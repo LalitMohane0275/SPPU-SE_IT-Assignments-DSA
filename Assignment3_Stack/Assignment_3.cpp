@@ -1,7 +1,7 @@
 /*
-Assignment 1
-Title :- Searching and Sorting
-Aim :- To create a student database and perform searching(linear and binary search) and sorting(quick, insertion and bubble sort).
+Assignment 3
+Title :- Stack
+Aim :- To convert a infix expression to postfix and prefix equation and evaluation of the same
 */
 
 #include <iostream> // header file
