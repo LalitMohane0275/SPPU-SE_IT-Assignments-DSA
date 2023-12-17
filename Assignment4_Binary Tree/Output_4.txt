@@ -1,0 +1,95 @@
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 1
+Enter postfix equation: ab+cd-/
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 2
+Pre order traversal(Recursive): / + a b - c d 
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 3
+Post order traversal(Recursive): a b + c d - / 
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 4
+In order traversal(Recursive): a + b / c - d 
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 5
+Pre order traversal(Non Recursive): / + a b - c d 
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 6
+Post order traversal(Non Recursive): a b + c d - / 
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 7
+In order traversal(Non Recursive): a + b / c - d 
+
+Menu:
+1. Enter postfix equation
+2. Print pre-order traversal (Recursive)
+3. Print post-order traversal (Recursive)
+4. Print in-order traversal (Recursive)
+5. Print pre-order traversal (Non Recursive)
+6. Print post-order traversal (Non Recursive)
+7. Print in-order traversal (Non Recursive)
+8. Exit
+Enter your choice: 8
+
