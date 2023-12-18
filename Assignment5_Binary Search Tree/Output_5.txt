@@ -1,0 +1,314 @@
+CREATE A BINARY TREE
+Enter at least one node
+Enter the number of nodes: 5
+Enter data: 4
+Enter data: 2
+Enter data: 7
+Enter data: 6
+Enter data: 8
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+1
+Enter data to insert: 
+10
+Node inserted successfully
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+2
+Enter the value of the node to delete: 
+2
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+3
+Enter the data you want to search: 
+5
+Element not found
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+4
+In-order traversal of the tree: 
+4 6 7 8 10 
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+3
+Enter the data you want to search: 
+4
+Element found
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+5
+Post-order traversal of the tree: 
+6 10 8 7 4 
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+6
+Pre-order traversal of the tree: 
+4 7 6 8 10 
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+7
+Level order traversal of the tree: 
+4 7 6 8 10 
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+8
+In-order traversal of tree after mirror: 
+10 8 7 6 4 
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+9
+Height of the tree is: 4
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+10
+The leaf nodes in the tree are: 
+6 10 
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+11
+Value of the maximum node inside the tree: 10
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+12
+Value of the minimum node inside the tree: 4
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+13
+Parents and their children present in the tree: Parent: 4
+Children: 
+Right: 7
+Parent: 7
+Children: 
+Left: 6
+Right: 8
+Parent: 8
+Children: 
+Right: 10
+
+_______MENU________
+Enter your choice: 
+1 - Insert node
+2 - Delete a node
+3 - Search a node
+4 - Inorder traversal
+5 - Post-order traversal
+6 - Pre-order traversal
+7 - Level order traversal
+8 - Mirror the BST
+9 - Display height of tree
+10 - Display leaf nodes
+11 - Display max node
+12 - Display min node
+13 - Display parent and their childs in the tree
+Press 14 to exit
+14

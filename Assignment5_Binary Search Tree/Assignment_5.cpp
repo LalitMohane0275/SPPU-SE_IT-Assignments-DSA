@@ -1,0 +1,472 @@
+/*
+Assignment 5
+Title :- Binary Search Tree
+Aim :- To implement bst and implement various fuctions of it
+*/
+
+#include <iostream>         // header file
+#include <algorithm>        // to use swap function
+#include <queue>            // stl queue
+
+using namespace std;
+
+// Node structure for Binary Search Tree
+struct Node {
+    int val;
+    Node* right;
+    Node* left;
+};
+
+// Binary Search Tree (BST) class
+class BST {
+private:
+    Node* root;
+
+public:
+    // Constructor
+    BST();
+
+    // Function to create a new node
+    Node* newNode(int data);
+
+    // Getter for the root of the tree
+    Node* getRoot();
+
+    // Function to create a Binary Search Tree
+    void createBST();
+
+    // Recursive function to insert a node in the tree
+    Node* insertNode(Node* root, int data);
+
+    // Recursive in-order traversal of the tree
+    void inOrder(Node* temp);
+
+    // Recursive pre-order traversal of the tree
+    void preOrder(Node* temp);
+
+    // Recursive post-order traversal of the tree
+    void postOrder(Node* temp);
+
+    // Function to calculate the height of the tree
+    int height(Node* root);
+
+    // Function to search for a node in the tree
+    bool search(Node* root, int search);
+
+    // Function to mirror the Binary Search Tree
+    void mirrorBST(Node* root);
+
+    // Function to display leaf nodes in the tree
+    void displayLeaf(Node* temp);
+
+    // Function to find the node with the minimum value
+    Node* minNode(Node* node);
+
+    // Function to find the node with the maximum value
+    Node* maxNode(Node* node);
+
+    // Function to delete a node with a given key from the tree
+    Node* dSearch(Node* root, int key);
+
+    // Level-order traversal of the tree using a queue
+    void levelOrder(Node* root);
+
+    // Function to display parent and their children in the tree
+    void parentChild(Node* root);
+};
+
+// Constructor for the BST class
+BST::BST() {
+    root = NULL;
+}
+
+// Function to create a new node with the given data
+Node* BST::newNode(int data) {
+    Node* temp = new Node;
+    temp->val = data;
+    temp->right = NULL;
+    temp->left = NULL;
+    return temp;
+}
+
+// Getter function to return the root of the tree
+Node* BST::getRoot() {
+    return root;
+}
+
+// Function to create a Binary Search Tree
+void BST::createBST() {
+    int num;
+    cout << "Enter the number of nodes: ";
+    cin >> num;
+
+    for (int i = 0; i < num; i++) {
+        cout << "Enter data: ";
+        int data;
+        cin >> data;
+
+        // Create a new node with the entered data
+        Node* New = newNode(data);
+
+        // If the tree is empty, set the new node as the root
+        if (!root) {
+            root = New;
+        } else {
+            // Traverse the tree to find the correct position for the new node
+            Node* temp = root, *follow = NULL;
+            while (temp) {
+                follow = temp;
+                if (New->val < temp->val)
+                    temp = temp->left;
+                else
+                    temp = temp->right;
+            }
+
+            // Insert the new node at the appropriate position
+            if (New->val < follow->val)
+                follow->left = New;
+            else
+                follow->right = New;
+        }
+    }
+}
+
+// Recursive function to insert a node in the tree
+Node* BST::insertNode(Node* root, int data) {
+    if (!root) {
+        root = newNode(data);
+        cout << "Node inserted successfully" << endl;
+        return root;
+    }
+    if (root->val > data) {
+        // Insert at the left part
+        root->left = insertNode(root->left, data);
+    } else {
+        // Insert at the right part
+        root->right = insertNode(root->right, data);
+    }
+    return root;
+}
+
+// Recursive in-order traversal of the tree
+void BST::inOrder(Node* temp) {
+    if (!temp)
+        return;
+    inOrder(temp->left);
+    cout << temp->val << " ";
+    inOrder(temp->right);
+    return;
+}
+
+// Recursive pre-order traversal of the tree
+void BST::preOrder(Node* temp) {
+    if (!temp)
+        return;
+    cout << temp->val << " ";
+    preOrder(temp->left);
+    preOrder(temp->right);
+    return;
+}
+
+// Recursive post-order traversal of the tree
+void BST::postOrder(Node* temp) {
+    if (!temp)
+        return;
+    postOrder(temp->left);
+    postOrder(temp->right);
+    cout << temp->val << " ";
+    return;
+}
+
+// Function to calculate the height of the tree
+int BST::height(Node* root) {
+    if (!root)
+        return 0;
+    return 1 + max(height(root->left), height(root->right));
+}
+
+// Function to search for a node in the tree
+bool BST::search(Node* root, int search) {
+    if (!root) {
+        return false;
+    }
+    Node* temp = root;
+
+    while (temp) {
+        if (search == temp->val)
+            return true;
+        else if (search < temp->val)
+            temp = temp->left;
+        else
+            temp = temp->right;
+    }
+    return false;
+}
+
+// Function to mirror the Binary Search Tree
+void BST::mirrorBST(Node* root) {
+    Node* temp = root;
+    if (!root)
+        return;
+
+    swap(temp->left, temp->right);
+    mirrorBST(temp->left);
+    mirrorBST(temp->right);
+}
+
+// Function to display leaf nodes in the tree
+void BST::displayLeaf(Node* temp) {
+    if (!temp)
+        return;
+    if (temp->left == NULL && temp->right == NULL) {
+        cout << temp->val << " ";
+    }
+    displayLeaf(temp->left);
+    displayLeaf(temp->right);
+    return;
+}
+
+// Function to find the node with the minimum value
+Node* BST::minNode(Node* node) {
+    Node* curr = node;
+    if (!node)
+        return NULL;
+    while (curr->left) {
+        curr = curr->left;
+    }
+    return curr;
+}
+
+// Function to find the node with the maximum value
+Node* BST::maxNode(Node* node) {
+    Node* curr = node;
+    if (!node)
+        return NULL;
+    while (curr->right) {
+        curr = curr->right;
+    }
+    return curr;
+}
+
+// Function to delete a node with a given key from the tree
+Node* BST::dSearch(Node* root, int key) {
+    if (!root)
+        return root;
+
+    if (root->val == key) {
+        // 0 child
+        if (!root->left && !root->right) {
+            delete root;
+            return NULL;
+        }
+
+        // 1 child
+        if (!root->right) {
+            Node* temp = root->left;
+            delete root;
+            return temp;
+        } else if (!root->left) {
+            Node* temp = root->right;
+            delete root;
+            return temp;
+        }
+
+        // 2 children
+        if (root->left && root->right) {
+            // Find the minimum value node in the right subtree
+            int mini = minNode(root->right)->val;
+            root->val = mini;
+
+            // Delete the node with the minimum value from the right subtree
+            root->right = dSearch(root->right, mini);
+            return root;
+        }
+    }
+    // If the key is not found, continue searching in the appropriate subtree
+    else if (root->val > key) {
+        root->left = dSearch(root->left, key);
+        return root;
+    } else {
+        root->right = dSearch(root->right, key);
+        return root;
+    }
+    return NULL;
+}
+
+// Level-order traversal of the tree using a queue
+void BST::levelOrder(Node* root) {
+    if (!root) {
+        cout << "The tree is empty" << endl;
+        return;
+    }
+    queue<Node*> lTraverse;
+    lTraverse.push(root);
+
+    while (!lTraverse.empty()) {
+        Node* node = lTraverse.front();
+        lTraverse.pop();
+        cout << node->val << " ";
+
+        if (node->left) {
+            lTraverse.push(node->left);
+        }
+        if (node->right) {
+            lTraverse.push(node->right);
+        }
+    }
+}
+
+// Function to display parent and their children in the tree
+void BST::parentChild(Node* root) {
+    if (!root)
+        return;
+    if (!root->left && !root->right)
+        return;
+
+    cout << "Parent: " << root->val << endl;
+    cout << "Children: " << endl;
+
+    if (root->left) {
+        cout << "Left: " << root->left->val << endl;
+    }
+    if (root->right) {
+        cout << "Right: " << root->right->val << endl;
+    }
+
+    parentChild(root->left);
+    parentChild(root->right);
+}
+
+// Function to display the menu and get user's choice
+int menu() {
+    cout << "_______MENU________\n";
+    cout << "Enter your choice: " << endl;
+    cout << "1 - Insert node\n2 - Delete a node\n3 - Search a node\n4 - Inorder traversal\n";
+    cout << "5 - Post-order traversal\n6 - Pre-order traversal\n7 - Level order traversal\n8 - Mirror the BST\n";
+    cout << "9 - Display height of tree\n10 - Display leaf nodes\n11 - Display max node\n12 - Display min node\n";
+    cout << "13 - Display parent and their childs in the tree\nPress 14 to exit\n";
+
+    int choice;
+    cin >> choice;
+
+    if (choice >= 1 && choice <= 14) {
+        return choice;
+    } else {
+        return 0;
+    }
+}
+
+// Main function
+int main() {
+    BST tree;
+    cout << "CREATE A BINARY TREE\nEnter at least one node\n";
+    tree.createBST();
+    Node* root = tree.getRoot();
+    cout << endl;
+
+    while (1) {
+        int choice = menu(); // Get user's choice from the menu
+
+        switch (choice) {
+            case 1:
+                // Insert a node into the tree
+                cout << "Enter data to insert: \n";
+                int data;
+                cin >> data;
+                tree.insertNode(root, data);
+                break;
+            case 2:
+                // Delete a node from the tree
+                cout << "Enter the value of the node to delete: " << endl;
+                int del;
+                cin >> del;
+                tree.dSearch(root, del);
+                break;
+            case 3:
+                // Search for a node in the tree
+                cout << "Enter the data you want to search: " << endl;
+                int search;
+                cin >> data;
+                bool flag;
+                flag = tree.search(root, data);
+                if (flag) {
+                    cout << "Element found" << endl;
+                } else {
+                    cout << "Element not found" << endl;
+                }
+                break;
+            case 4:
+                // In-order traversal of the tree
+                cout << "In-order traversal of the tree: " << endl;
+                tree.inOrder(root);
+                cout << endl;
+                break;
+            case 5:
+                // Post-order traversal of the tree
+                cout << "Post-order traversal of the tree: " << endl;
+                tree.postOrder(root);
+                cout << endl;
+                break;
+            case 6:
+                // Pre-order traversal of the tree
+                cout << "Pre-order traversal of the tree: " << endl;
+                tree.preOrder(root);
+                cout << endl;
+                break;
+            case 7:
+                // Level-order traversal of the tree
+                cout << "Level order traversal of the tree: " << endl;
+                tree.levelOrder(root);
+                cout << endl;
+                break;
+            case 8:
+                // Mirror the Binary Search Tree
+                tree.mirrorBST(root);
+                cout << "In-order traversal of tree after mirror: " << endl;
+                tree.inOrder(root);
+                cout << endl;
+                tree.mirrorBST(root);
+                break;
+            case 9:
+                // Display the height of the tree
+                int h;
+                h = tree.height(root);
+                cout << "Height of the tree is: " << h << endl;
+                break;
+            case 10:
+                // Display leaf nodes in the tree
+                cout << "The leaf nodes in the tree are: " << endl;
+                tree.displayLeaf(root);
+                cout << endl;
+                break;
+            case 11:
+                // Display the value of the maximum node in the tree
+                cout << "Value of the maximum node inside the tree: ";
+                cout << tree.maxNode(root)->val;
+                cout << endl;
+                break;
+            case 12:
+                // Display the value of the minimum node in the tree
+                cout << "Value of the minimum node inside the tree: ";
+                cout << tree.minNode(root)->val;
+                cout << endl;
+                break;
+            case 13:
+                // Display parent and their children in the tree
+                cout << "Parents and their children present in the tree: ";
+                tree.parentChild(root);
+                break;
+            case 14:
+                // Exit the program
+                exit(0);
+            default:
+                // Invalid choice
+                cout << "Please enter a valid choice :)" << endl;
+                break;
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
