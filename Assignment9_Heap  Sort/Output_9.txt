@@ -1,0 +1,55 @@
+Enter no of elements : 
+5
+Enter the 5 elements : 
+0 3 2 1 4
+Heap is successefully created :  
+Elements in the heap are : 
+0  3  2  1  4  
+
+________MENU____________
+1 - Sort Heap => Ascending order
+2 - Sort Heap => Descending order
+3 - Display Heap
+4 - exit
+Enter your choice : 
+1
+Heap is sorted!!
+
+________MENU____________
+1 - Sort Heap => Ascending order
+2 - Sort Heap => Descending order
+3 - Display Heap
+4 - exit
+Enter your choice : 
+3
+Elements in the heap are : 
+4  3  2  1  0  
+
+________MENU____________
+1 - Sort Heap => Ascending order
+2 - Sort Heap => Descending order
+3 - Display Heap
+4 - exit
+Enter your choice : 
+2 
+Heap is sorted!!
+
+________MENU____________
+1 - Sort Heap => Ascending order
+2 - Sort Heap => Descending order
+3 - Display Heap
+4 - exit
+Enter your choice : 
+3
+Elements in the heap are : 
+0  1  2  4  3  
+
+________MENU____________
+1 - Sort Heap => Ascending order
+2 - Sort Heap => Descending order
+3 - Display Heap
+4 - exit
+Enter your choice : 
+4
+Thank you
+
