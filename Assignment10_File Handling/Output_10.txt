@@ -1,0 +1,158 @@
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 1
+Enter the roll number:- 1
+Enter the name of the student:- Aman
+Enter the marks:- 95
+
+Do you want to add another record?(y/n):- y
+Enter the roll number:- 2
+Enter the name of the student:- Chaman
+Enter the marks:- 98
+
+Do you want to add another record?(y/n):- y
+Enter the roll number:- 3
+Enter the name of the student:- Baman
+Enter the marks:- 91
+
+Do you want to add another record?(y/n):- y
+Enter the roll number:- 4
+Enter the name of the student:- Kiran
+Enter the marks:- 96
+
+Do you want to add another record?(y/n):- n
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 2
+
+-----------------------------------------------------------------
+Sr No. Roll No.    Name       Marks
+
+-----------------------------------------------------------------
+  1  	1	   Aman   	95
+  2  	2	   Chaman   	98
+  3  	3	   Baman   	91
+  4  	4	   Kiran   	96
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 3
+Enter the details of the record you want to insert:- 
+Enter the roll number:- 5
+Enter the name of the student:- Simran
+Enter the marks:- 99
+Record inserted successfully
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 2
+
+-----------------------------------------------------------------
+Sr No. Roll No.    Name       Marks
+
+-----------------------------------------------------------------
+  1  	1	   Aman   	95
+  2  	2	   Chaman   	98
+  3  	3	   Baman   	91
+  4  	4	   Kiran   	96
+  5  	5	   Simran   	99
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 4
+Enter the roll number of the record you want to delete:- 3
+Record with roll number 3 deleted successfully
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 2
+
+-----------------------------------------------------------------
+Sr No. Roll No.    Name       Marks
+
+-----------------------------------------------------------------
+  1  	1	   Aman   	95
+  2  	2	   Chaman   	98
+  3  	4	   Kiran   	96
+  4  	5	   Simran   	99
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 5
+Enter the roll number of the record you want to edit:- 1
+Enter new name of student:- Aman
+Enter the new marks:- 100
+Record with roll number 1 edited successfully
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 2
+
+-----------------------------------------------------------------
+Sr No. Roll No.    Name       Marks
+
+-----------------------------------------------------------------
+  1  	1	   Aman   	100
+  2  	2	   Chaman   	98
+  3  	4	   Kiran   	96
+  4  	5	   Simran   	99
+
+Students Database
+1. Create
+2. Display
+3. Add
+4. Delete
+5. Modify
+6. Exit program
+
+Enter your choice:- 6
+
