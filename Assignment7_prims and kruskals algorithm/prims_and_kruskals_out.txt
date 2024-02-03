@@ -1,0 +1,77 @@
+=> first testcase :- 4 4 0 1 1 0 2 2 2 3 1 1 3 4
+
+------------- Prims's and Kruskal's Algorithm---------------
+
+Enter no. of nodes : 4 4 0 1 1 0 2 2 2 3 1 1 3 4
+Enter no of edges : 
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Adjacency list : 
+0 ->  [1, 1],  [2, 2], 
+1 ->  [0, 1],  [3, 4], 
+2 ->  [0, 2],  [3, 1], 
+3 ->  [2, 1],  [1, 4], 
+*************Prim's algorithm***************
+
+********** Minimum Spanning Tree **********
+Edge | weight
+_____|_______
+0--1 | (1)
+0--2 | (2)
+2--3 | (1)
+
+The shortest distance is : 4
+*************Kruskal's algorithm***************
+
+********** Minimum Spanning Tree **********
+Edge | weight
+_____|_______
+1--0 | (1)
+3--2 | (1)
+
+The minimum cost is : 4
+
+=> second test case :- 5 8 0 1 3 0 2 2 1 2 1 1 3 4 2 3 5 2 4 2 3 4 1 4 0 3
+
+------------- Prims's and Kruskal's Algorithm---------------
+
+Enter no. of nodes : 5 8 0 1 3 0 2 2 1 2 1 1 3 4 2 3 5 2 4 2 3 4 1 4 0 3
+Enter no of edges : 
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Enter edge => (start node, end node, weight)
+Adjacency list : 
+0 ->  [1, 3],  [2, 2],  [4, 3], 
+1 ->  [0, 3],  [2, 1],  [3, 4], 
+2 ->  [0, 2],  [1, 1],  [3, 5],  [4, 2], 
+3 ->  [1, 4],  [2, 5],  [4, 1], 
+4 ->  [2, 2],  [3, 1],  [0, 3], 
+*************Prim's algorithm***************
+
+********** Minimum Spanning Tree **********
+Edge | weight
+_____|_______
+2--1 | (1)
+0--2 | (2)
+4--3 | (1)
+2--4 | (2)
+
+The shortest distance is : 6
+*************Kruskal's algorithm***************
+
+********** Minimum Spanning Tree **********
+Edge | weight
+_____|_______
+2--0 | (2)
+2--1 | (1)
+4--2 | (2)
+4--3 | (1)
+
+The minimum cost is : 6
